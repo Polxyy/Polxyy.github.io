@@ -15,19 +15,16 @@
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">За Нас</a></li>
-                <li><a href="work.html">Нашата Работа</a></li>
-                <li><a href="events.html">Събития</a></li>
-                <li><a href="contact.html">Контакт</a></li>
-                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                  </a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" id="nav_about">За нас</a>
+        <a href="events.html" id="nav_events">Събития</a>
+        <a href="work.html" id="nav_work">Нашата работа</a>
+        <a href="contact.html" id="nav_contact">Контакти</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
     <main>
         <section id="about" class="about-section">
             <div class="text-container">
@@ -167,13 +164,29 @@
     </main>
 
     <footer>
-        <ul>
-            <li><a href="https://www.facebook.com/">Facebook</a></li>
-            <li><a href="https://twitter.com/">Twitter</a></li>
-            <li><a href="https://www.instagram.com/">Instagram</a></li>
-        </ul>
+        <div class="footer-left">
+            <a href="facebook.com">Facebook</a>
+            <a href="twitter.com">Twitter</a>
+            <a href="instagram.com">Instagram</a>
+        </div>
+        <div class="footer-right">
+            <ul>
+                <li><a href="#about">growHub</a></li>
+                <li><a href="#partners">Партньори</a></li>
+                <li><a href="contact.html">Контакт</a></li>
+            </ul>
+        </div>
     </footer>
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>

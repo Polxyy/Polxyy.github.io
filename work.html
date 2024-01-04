@@ -7,7 +7,7 @@
     <meta name="description" content="Information about growHub's work in delivering local fresh food">
     <meta name="keywords" content="organic, vegetables, local, eco-friendly, growHub, work">
     <meta name="author" content="Your Name">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>growHub - Our Work</title>
 
     <link rel="stylesheet" href="styles.css">
@@ -15,38 +15,50 @@
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">За Нас</a></li>
-                <li><a href="work.html">Нашата Работа</a></li>
-                <li><a href="events.html">Събития</a></li>
-                <li><a href="contact.html">Контакт</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">За нас</a>
+        <a href="events.html">Събития</a>
+        <a href="work.html">Нашата работа</a>
+        <a href="contact.html">Контакти</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 
     <section id="work">
         <h1>Our Work</h1>
-        <p>growHub is dedicated to delivering fresh, organic produce to supermarkets and individuals who prioritize a healthy lifestyle...</p>
+        <h2>Achievements</h2>
+        <ol>
+           <li>Year of Establishment: growHub was founded in 2010 with a vision to revolutionize the way people access fresh, organic
+            produce.</li>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Market Niche</th>
-                    <th>Current Status in Varna</th>
-                    <th>Future Growth Plan</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Organic Vegetables</td>
-                    <td>In Demand</td>
-                    <td>Expand partnerships with local farmers</td>
-                </tr>
-                <!-- Add more rows as needed -->
-            </tbody>
-        </table>
+        <li> Farmers Network: Collaborating with over 500 local farmers, growHub has established a robust network to source a diverse
+            range of organic fruits and vegetables.
+            </li>
+        <li> Organic Certification: All produce from growHub is certified organic, ensuring that it meets the highest standards of
+            environmental sustainability and health.</li>
+
+            <li>Variety of Produce: Offering a wide variety of organic produce, growHub delivers everything from seasonal fruits and
+            vegetables to herbs and specialty items, meeting the diverse preferences of customers.</li>
+
+        <li> Zero Pesticides: Proudly boasting a commitment to environmental sustainability, growHub has achieved the milestone of
+            zero pesticide use in its farming practices, contributing to healthier ecosystems.</li>
+
+
+
+        </ol>
+                <h2>Products Delivered</h2>
+
+                <p>As of the latest count, growHub has successfully delivered:</p>
+
+                <ol>
+                    <li><strong>Organic Fruits:</strong> 500,000+</li>
+                    <li><strong>Organic Vegetables:</strong> 750,000+</li>
+                    <li><strong>Herbs and Specialty Items:</strong> 100,000+</li>
+                </ol>
+
+                <p>Our commitment to providing fresh, organic produce extends to every product we deliver, contributing to healthier
+                    lifestyles and sustainable communities.</p>
 
     </section>
 
@@ -57,7 +69,16 @@
             <li><a href="https://www.instagram.com/">Instagram</a></li>
         </ul>
     </footer>
-
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
 </body>
 
 </html>

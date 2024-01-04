@@ -7,7 +7,7 @@
     <meta name="description" content="Информация за предстоящите събития, организирани от growHub">
     <meta name="keywords" content="био, зеленчуци, местни, еко-фрийндли, growHub, събития">
     <meta name="author" content="Вашето Име">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>growHub - Събития</title>
 
     <link rel="stylesheet" href="styles.css">
@@ -15,16 +15,15 @@
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">За Нас</a></li>
-                <li><a href="work.html">Нашата Работа</a></li>
-                <li><a href="events.html">Събития</a></li>
-                <li><a href="contact.html">Контакт</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">За нас</a>
+        <a href="events.html">Събития</a>
+        <a href="work.html">Нашата работа</a>
+        <a href="contact.html">Контакти</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 
     <section id="events">
         <h1>Предстоящи Събития</h1>
@@ -74,7 +73,16 @@
             <li><a href="https://www.instagram.com/">Instagram</a></li>
         </ul>
     </footer>
-
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
 </body>
 
 </html>
