@@ -309,7 +309,7 @@ button:hover {
     display: none;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -318,7 +318,7 @@ button:hover {
   }
   
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
