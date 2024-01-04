@@ -3,11 +3,33 @@ body {
     flex-direction: column;
     font-family: 'Arial', sans-serif;
     font-size: 16px;
-    color: #97BD70; /* Adjust the color as needed */
+    color: #97BD70; 
     background-color: #F4EEEF;
     min-height: 98vh;
     margin:0;
 
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Ensure images don't exceed the width of their container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .image-container,
+    .text-container {
+        max-width: 100%; /* Adjust max-width for better responsiveness */
+        margin-right: 5%; /* Reduce margin for better spacing on smaller screens */
+    }
+
+    h1,
+    h2 {
+        font-size: 1.5em; /* Adjust heading font size for smaller screens */
+    }
 }
 
 hr{
@@ -18,7 +40,7 @@ hr{
 }
 
 header {
-    background-color: #97BD70; /* Palette green */
+    background-color: #97BD70; 
     padding: 10px;
 }
 
@@ -39,7 +61,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #FFF; /* White */
+    color: #FFF; 
     font-weight: bold;
 }
 
@@ -48,7 +70,7 @@ section {
 }
 
 footer {
-    background-color: #F5F5F5; /* Pale white */
+    background-color: #F5F5F5; 
     padding: 10px;
 }
 
@@ -65,12 +87,10 @@ footer li {
 
 footer a {
     text-decoration: none;
-    color: #333; /* Adjust the color as needed */
+    color: #333; 
 }
 
-/* Existing styles */
 
-/* Additional styles for work.html */
 section table {
     width: 100%;
     border-collapse: collapse;
@@ -87,13 +107,11 @@ th, td {
 }
 
 th {
-    background-color: #00FF00; /* Palette green */
-    color: #FFF; /* White */
+    background-color: #00FF00; 
+    color: #FFF; 
 }
 
-/* Existing styles */
 
-/* Additional styles for events.html */
 .event {
     display: flex;
     align-items: center;
@@ -103,7 +121,7 @@ th {
 }
 
 .event h2 {
-    color: #a6e7a6; /* Palette green */
+    color: #a6e7a6; 
 }
 
 .event p {
@@ -127,9 +145,7 @@ th {
 
 
 
-/* Existing styles */
 
-/* Additional styles for contact.html */
 .contact-form {
     max-width: 400px;
     margin-top: 20px;
@@ -148,19 +164,18 @@ textarea {
 }
 
 button {
-    background-color: #00FF00; /* Palette green */
-    color: #FFF; /* White */
+    background-color: #00FF00; 
+    color: #FFF; 
     padding: 10px;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #008000; /* Darker green on hover */
+    background-color: #008000;
 }
 
 
-/* Add this to the existing styles.css */
 
 .about-section {
     display: flex;
@@ -173,13 +188,16 @@ button:hover {
 }
 
 .image-container {
-    max-width: 40%;
+    max-width: 30%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .image-container img {
-    width: 100%;
-    height: auto;
+    margin-left: 5%;
+    max-width: 90%;
     border-radius: 8px; 
+    margin-right: 10%;
 }
 
 
@@ -248,4 +266,13 @@ button:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.sponsors-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#gs{
 }
